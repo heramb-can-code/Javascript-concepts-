@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title class="text-white">DOM</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="bg-black">
+        <h1 id="title" class="test">Learning DOM with chai and codeeee</h1>
+        <p class="text-gray-400">This is a paragraph to practice DOM manipulation.</p>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <input type="password" name="" id="">
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+            <li class = "list-item">four</li>
+        </ul>
+    </div>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+        <div class="day">friday</div>
+    </div>
+
+
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[2]);
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i]);
+        
+    }
+    const btn= document.createElement('button');
+    btn.innerText = "Click Me";
+    btn.style.padding = "10px 20px";
+    btn.style.fontSize = "16px";
+    btn.style.cursor = "pointer";
+    btn.style.backgroundColor = "blue";
+document.body.appendChild(btn);
+</script>   
+</html>
