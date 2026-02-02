@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="yum">
+        <li><img width="200" id="veg1" src="product-1.png" alt="spinach"  ></li>
+        <li><img width="200" id="veg2" src="product-2.png" alt="brocolli" ></li>
+        <li><img width="200" id="veg3" src="product-3.png" alt="carrot" ></li>
+
+    </ul>
+</body>
+<script>
+    // Get the image elements by their IDs
+    const veg1 = document.getElementById('veg1');
+    const veg2 = document.getElementById('veg2');
+    const veg3 = document.getElementById('veg3');
+
+    // Add event listeners to the images
+    veg1.addEventListener('click', function() {
+        alert('You clicked on spinach!');
+    });
+
+    // veg2.addEventListener('mouseenter', function() {
+    //     alert('You hovered over brocolli!');
+    // });
+
+    veg3.addEventListener('drag', function() {
+        alert('You are dragging the carrot!');
+    });
+
+    document.getElementById("veg2").addEventListener("click", function(e) {
+        alert("Brocolli is rich in vitamins!");
+      });
+
+      document.getElementById("yum").addEventListener("click", function(e) {
+        console.log(e.target.parentNode);
+        let removeIt= e.target.parentNode;
+        removeIt.remove();
+      });
+
+</script>
+</html>
