@@ -1,0 +1,2 @@
+
+    getUSerInfo: function() {
